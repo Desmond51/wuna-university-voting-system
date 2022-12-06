@@ -10,14 +10,14 @@ export default function Footer ()  {
           <CDBBox>
             <a href="/" className="d-flex align-items-center p-0 text-muted">
               {/* <img alt="logo" src={wunalogo} width="30px" /> */}
-              <span className="ms-3 h5 font-weight-bold text-decoration-none text-info">Wuna University</span>
+              <span className="ms-3 h5 font-weight-bold text-decoration-none" style={{ fontWeight: '600', color:"#f3aa92" }}>Wuna University</span>
             </a>
             <p className="my-3" style={{ width: '250px' }}>
               We  give High Quality training to make our students stand out amongst other students from other university. 
             </p>
           </CDBBox>
           <CDBBox>
-            <p className="h5 mb-4 text-info" style={{ fontWeight: '600' }}>
+            <p className="h5 mb-4" style={{ fontWeight: '600', color:"#f3aa92" }}>
               Insight
             </p>
             <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0', fontSize:"2px" }}>
@@ -28,7 +28,7 @@ export default function Footer ()  {
             </CDBBox>
           </CDBBox>
           <CDBBox>
-            <p className="h5 mb-4 text-info" style={{ fontWeight: '600' }}>
+            <p className="h5 mb-4" style={{ fontWeight: '600', color:"#f3aa92"  }}>
               Help
             </p>
             <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
@@ -38,7 +38,7 @@ export default function Footer ()  {
             </CDBBox>
           </CDBBox>
           <CDBBox>
-            <p className="h5 mb-4 text-info" style={{ fontWeight: '600' }}>
+            <p className="h5 mb-4" style={{ fontWeight: '600',color:"#f3aa92" }}>
               Others
             </p>
             <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
@@ -64,7 +64,7 @@ export default function Footer ()  {
             <CDBIcon fab icon="instagram" />
           </CDBBtn>
         </CDBBox>
-        <small className="text-center mt-5 text-info">&copy; Wuna University, 2022. All rights reserved.</small>
+        <small className="text-center mt-5" style={{ color:"#f3aa92"}}>&copy; Wuna University, 2022. All rights reserved.</small>
       </CDBBox>
     </CDBFooter>
   );

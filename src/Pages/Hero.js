@@ -24,7 +24,7 @@ function Hero() {
           </div>
           <div className="col-md-5 text-center d-none d-md-block">
             <span className="dezy" data-bs-placement="bottom" title="Students enjoying the learning process" >
-            <img src={image1} className="img-fluid" alt="img" />
+            <img src={image1} className="img-fluid border border-2 rounded-circle" alt="img" />
             </span>
           </div>
         </div>

@@ -67,10 +67,9 @@ function App() {
         </li>
         <li className="nav-item">
         <Link className="nav-link text-reset" aria-current="page"  to="/about"> About </Link>
-          <a className="nav-link text-reset" href="#about">About</a>
         </li>
         <li className="nav-item ">
-          <a className="nav-link text-reset" href="#s">Contact Us</a>
+        <Link className="nav-link text-reset" aria-current="page"  to="/contact"> Contact Us </Link>
         </li>
       </ul>
    
@@ -95,10 +94,7 @@ function App() {
         <Route path="/votepage" element={<VotePage setIsAuth={setIsAuth} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-       
-        
-        
-        
+         
       </Routes>
       <Hero />
       <Cards />
