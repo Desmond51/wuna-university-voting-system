@@ -31,9 +31,9 @@ function App() {
 
   return (
     <Router>
-      <nav className="navbar navbar-expand-lg text-success navbar-light bg-info">
-      <div className="container-fluid">
-      <h2 className="ms-5">Wuna</h2>
+      <nav className="navbar navbar-expand-lg text-success navbar-light " style={{backgroundColor:"rgb(119, 145, 161)"}}> 
+      <div className="container-fluid" style={{ color:"#f3aa92"}}>
+      <h2 className="ms-5" >W<span style={{ color:"#5c616e"}}>u</span><span style={{ color:"#f3aa92"}}>n</span><span style={{ color:"#fefefe"}}>a</span></h2>
       {/* <a className="navbar-brand ms-5 fw-bold" href="#s"><img style={{height:"55px", width:"100px"}} src={wunalogo1} className="img-fluid" alt="img" />
 </a> */}
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,8 @@ function App() {
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-reset" href="#s">About</a>
+        <Link className="nav-link text-reset" aria-current="page"  to="/about"> About </Link>
+          <a className="nav-link text-reset" href="#about">About</a>
         </li>
         <li className="nav-item ">
           <a className="nav-link text-reset" href="#s">Contact Us</a>
@@ -80,8 +81,8 @@ function App() {
           <Link className='btn btn-outline-success me-4 border border-2 rounded-pill text-reset' to ='/login'>Login</Link>
         ) : (
           <>
-            <Link className="mx-4 btn btn-outline-success border border-2 rounded-pill text-reset" to="/createpost" > Create Post </Link>
-            <button className="btn btn-outline-success border border-2 rounded-pill text-reset" onClick={signUserOut}> Log Out</button>
+            <Link className="mx-4 btn btn-outline-success border border-2 rounded-pill text-reset" style={{backgroundColor:"rgb(119, 145, 161)"}} to="/createpost" > Create Post </Link>
+            <button className="btn btn-outline-success border border-2 rounded-pill text-reset" style={{backgroundColor:"rgb(119, 145, 161)"}} onClick={signUserOut}> Log Out</button>
           </>
         )}
         
@@ -92,7 +93,7 @@ function App() {
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
         <Route path="/votepage" element={<VotePage setIsAuth={setIsAuth} />} />
-        <Route path='/aboutus' element={<About />} />
+        <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
        
         

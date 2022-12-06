@@ -14,7 +14,7 @@ function Cards() {
   <div className="card-body">
     <h5 className="card-title">Prof JJ. Asongu. <span className='text-success'>Phd</span> </h5>
     <p className="card-text">The president and founder of Wuna University.</p>
-    <a href="#s" className="btn btn-info">More details</a>
+    <a href="#s" className="btn btn-info border border-2 rounded-pill"  style={{backgroundColor:"rgb(119, 145, 161)", color:"white"}}>More details</a>
   </div>
 </div>
  <div className="card" style={{width: "18rem"}}>
@@ -22,7 +22,7 @@ function Cards() {
   <div className="card-body">
     <h5 className="card-title">Prof JJ. Asongu. <span className='text-success'>Phd</span> </h5>
     <p className="card-text">The president and founder of Wuna University.</p>
-    <a href="#s" className="btn btn-info">More details</a>
+    <a href="#s" className="btn btn-info border border-2 rounded-pill"  style={{backgroundColor:"rgb(119, 145, 161)", color:"white"}}>More details</a>
   </div>
 </div>
  <div className="card" style={{width: "18rem"}}>
@@ -30,7 +30,7 @@ function Cards() {
   <div className="card-body">
     <h5 className="card-title">Prof JJ. Asongu. <span className='text-success'>Phd</span> </h5>
     <p className="card-text">The president and founder of Wuna University.</p>
-    <a href="#s" className="btn btn-info">More details</a>
+    <a href="#s" className="btn btn-info border border-2 rounded-pill"  style={{backgroundColor:"rgb(119, 145, 161)", color:"white"}}>More details</a>
   </div>
 </div>
  <div className="card" style={{width: "18rem"}}>
@@ -38,7 +38,7 @@ function Cards() {
   <div className="card-body">
     <h5 className="card-title">Prof JJ. Asongu. <span className='text-success'>Phd</span> </h5>
     <p className="card-text">The president and founder of Wuna University.</p>
-    <a href="#s" className="btn btn-info">More details</a>
+    <a href="#s" className="btn btn-info border border-2 rounded-pill"  style={{backgroundColor:"rgb(119, 145, 161)", color:"white"}}>More details</a>
   </div>
 </div>
     </div>
