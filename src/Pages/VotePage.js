@@ -1,5 +1,4 @@
 import React from 'react'
-import { FcHome } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import look1 from '../images/look1.jpg'
 import look2 from '../images/look2.jpg'
@@ -10,33 +9,22 @@ import look6 from '../images/look6.jpg'
 import look7 from '../images/look7.jpg'
 import look8 from '../images/look8.jpg'
 
+
+// let counter = 0;
 function VotePage() {
-	// let Upvote = require('react-upvote');
+    // counter ++;
+    // document.getElementById('imput1').innerHTML = counter;
+
   return (
     <div className='row bg-light container-lg my-5'>
-
-    {/* <div className='col-sm-1 col-2 col-lg-2 p-0 mx-0'>
+    {/* <div className='voting' >
+    <button id='votebtn' onClick={VotePage()}> Vote </button>
+<input type="number" id='imput1' value={0} name ="" />  
     
-    <div className=' bg-success' style={{display:"flex", flexDirection:"column",height:"238vh"}}>
-    <div className='mx-5 mt-5 '>
-    <p> Home</p>
-    </div>
-    <div className='mx-5'>
-    <p><i className="fa-brands fa-cc-discover mt-5 m-3"></i>Discover</p>
-    </div>
-    <div className='mx-5'>
-    <p><i className="fa-solid fa-arrow-up-right-dots mt-5 "></i>Popualar</p>
-    </div>
-       <div className='mx-5'>
-    <p><i className="fa-brands fa-twitter mt-5 "></i>Following</p>
-   
-    </div>
-    
-    </div>
+    </div> */}
   
 
 
-    </div> */}
     <div className=' col-sm-1 col-2 col-lg-12'>
    
 			<div className="xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}">
@@ -54,7 +42,6 @@ function VotePage() {
 					
 					</form>
 				</div>
-				{/* <Upvote>Example</Upvote> */}
 
 				<div>
 					<h3 className=" bg-white p-5 text-center" style={{ marginBottom:"1em"}}>

@@ -10,11 +10,9 @@ import Contact from './Pages/Contact'
 import Hero from './Pages/Hero' 
 import Footer from './components/Footer' 
 import Cards from './components/Cards' 
-// import wunalogo1 from './images/wunalogo1.png'
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./backend/firebase";
-
 
 
 function App() {
@@ -98,9 +96,7 @@ function App() {
       </Routes>
       <Hero />
       <Cards />
-      <Contact />
     <Footer />
-      
     </Router>
   );
 }

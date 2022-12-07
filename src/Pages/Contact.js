@@ -40,15 +40,15 @@ function Contact() {
               <span className="input-group-text">
                 <i className="bi bi-person-fill text-secondary"></i>
               </span>
-              <input type="text" id="name" className="form-control" placeholder="e.g. Desmond" />
+              <input type="text" id="name" className="form-control " placeholder="e.g. Desmond" />
             </div>           
             <div className="mb-4 input-group">
             </div>
             <p>Write your worries</p>
             
             <div className="mb-4 mt-3 form-floating">
-              <textarea className="form-control" id="query" style={{height: "140px", width: "35em"}} placeholder="query"></textarea>
-              <label for="query">Your worries...</label>
+              <textarea className="form-control  rounded-pill" id="query" style={{height: "140px", width: "35em"}} placeholder="query"></textarea>
+              <label className='m-4' for="query">Your worries...</label>
             </div>
             <div className="mb-4 text-center ps-5 ms-5">
               <button type="submit" className="btn border border-2 rounded-pill " style={{backgroundColor:"rgb(119, 145, 161)"}}>Submit</button>

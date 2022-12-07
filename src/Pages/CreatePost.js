@@ -27,7 +27,7 @@ function CreatePost({ isAuth }) {
 
   return (
     <div className="createPostPage">
-      <div className="cpContainer bg-success">
+      <div className="cpContainer " style={{backgroundColor:"rgb(119, 145, 161)"}}>
         <h1>Add a Candidate</h1>
         <div className="inputGp">
           <label> Name:</label>
