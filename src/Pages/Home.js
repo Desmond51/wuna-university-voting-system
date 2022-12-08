@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../backend/firebase";
+import Hero from '../Pages/Hero' 
+import Footer from '../components/Footer' 
+import Cards from '../components/Cards' 
 // import { Navbar } from "react-bootstrap";
 // import Navbar from './Navbar'
 
@@ -16,6 +19,14 @@ function Home({ isAuth }) {
 
     getPosts();
   }, );
+  
+  return(
+  <div>
+       <Hero />
+      <Cards />
+    <Footer />
+  </div>
+  )
 
   // const deletePost = async (id) => {
   //   const postDoc = doc(db, "posts", id);
