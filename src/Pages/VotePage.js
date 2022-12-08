@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import look1 from '../images/look1.jpg'
 import look2 from '../images/look2.jpg'
@@ -12,6 +13,21 @@ import look8 from '../images/look8.jpg'
 
 // let counter = 0;
 function VotePage() {
+const [vote, setvote]= useState(0)
+const [voteactive, setvoteactive]= useState(false)
+
+function voted(){
+if(voteactive){
+setvoteactive(false)
+setvote(vote-1)
+}else{
+	setvoteactive(true)
+	setvote(vote+1)
+	
+}
+
+} 
+
     // counter ++;
     // document.getElementById('imput1').innerHTML = counter;
 
@@ -61,7 +77,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Desmond Teko </h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -70,7 +86,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Akoneh Silas</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -79,7 +95,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Namkat Cedric</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote {vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -88,7 +104,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'>Estella Sheinbom</h6>
 						<p className='text-center mb-3'> Graphic Design</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote {vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -111,7 +127,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Miriam Kuheh</h6>
 						<p className='text-center mb-3'> Graphic Design</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -120,7 +136,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Evaristus Tambua</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -129,7 +145,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Vanessiah Eyong</h6>
 						<p className='text-center mb-3'> Graphic Design</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -138,7 +154,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Gilbert Tima</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -160,7 +176,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Chu Edwin</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -169,7 +185,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Bassah Bernard</h6>
 						<p className='text-center mb-3'> Petroleum Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -178,7 +194,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Kimboh Lovette</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
@@ -187,7 +203,7 @@ function VotePage() {
 						<h6 className='my-2 text-center'> Rouclec Asonghanyi</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md'>Vote</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
