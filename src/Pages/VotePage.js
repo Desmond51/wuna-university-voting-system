@@ -73,16 +73,16 @@ setvote(vote-1)
 						}}
 					>
 						<span>
-						<img src={look5} alt="tech" className="mx-3 h-100" style={{borderRadius:"10px", width:"12em"}} />
+						<img src={look5} alt="Desmond Teko" className="mx-3 h-100" style={{borderRadius:"10px", width:"12em"}} />
 						<h6 className='my-2 text-center'> Desmond Teko </h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
-						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md' onClick={voted}>Vote{vote}</button>
+						<button className='btn btn-success ms-4 me-3 border rounded-pill btn-md ' onClick={voted}>Vote {vote}</button>
 						<button  className='btn btn-primary border rounded-pill btn-md'>Details</button>
 						</p>
 						</span>
 						<span>
-						<img src={look3} alt="tech" className="mx-3 h-100" style={{borderRadius:"10px", width:"12em"}} />
+						<img src={look3} alt=" Akoneh Silas" className="mx-3 h-100" style={{borderRadius:"10px", width:"12em"}} />
 						<h6 className='my-2 text-center'> Akoneh Silas</h6>
 						<p className='text-center mb-3'> Sofware Engineering</p>
 						<p>
